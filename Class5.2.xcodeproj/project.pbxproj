@@ -14,6 +14,7 @@
 		35DEB5DF1BC5DF16000F8F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DEB5DD1BC5DF16000F8F0C /* LaunchScreen.storyboard */; };
 		35DEB5EA1BC5DF16000F8F0C /* Class5_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEB5E91BC5DF16000F8F0C /* Class5_2Tests.swift */; };
 		35DEB5F51BC5DF16000F8F0C /* Class5_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEB5F41BC5DF16000F8F0C /* Class5_2UITests.swift */; };
+		35DEB63F1BC5F59C000F8F0C /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEB63E1BC5F59C000F8F0C /* MyTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		35DEB5F01BC5DF16000F8F0C /* Class5.2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Class5.2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DEB5F41BC5DF16000F8F0C /* Class5_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class5_2UITests.swift; sourceTree = "<group>"; };
 		35DEB5F61BC5DF16000F8F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35DEB63E1BC5F59C000F8F0C /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				35DEB5DB1BC5DF16000F8F0C /* Assets.xcassets */,
 				35DEB5DD1BC5DF16000F8F0C /* LaunchScreen.storyboard */,
 				35DEB5E01BC5DF16000F8F0C /* Info.plist */,
+				35DEB63E1BC5F59C000F8F0C /* MyTableViewController.swift */,
 			);
 			path = Class5.2;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35DEB5D71BC5DF16000F8F0C /* ViewController.swift in Sources */,
+				35DEB63F1BC5F59C000F8F0C /* MyTableViewController.swift in Sources */,
 				35DEB5D51BC5DF16000F8F0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
