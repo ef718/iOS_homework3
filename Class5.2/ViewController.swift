@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     
     var movieNames = [String]()
+    var moviePosters = [String]()
+    var movieImages = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,8 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let movieController = segue.destinationViewController as? MyTableViewController {
             movieController.movieNames = movieNames
+            movieController.moviePosters = moviePosters
+            movieController.movieImages = movieImages
         }
     }
     
@@ -59,13 +63,23 @@ class ViewController: UIViewController {
                                     self.movieNames.append(title)
 //                                    print(title)
                                 }
+                                if let poster = movie["Poster"] as? String {
+                                    self.moviePosters.append(poster)
+//                                    print(poster)
+                                    
+                                    
+                                    let url = NSURL(string: poster)
+                                    let data = NSData(contentsOfURL: url!)
+                                    if data != nil {
+                                        self.movieImages.append(UIImage(data:data!)!)
+                                    }
+                                }
                             }
                             
-//                            print(movies)
                         }
                         
                     }
-                    print("RESPONDED!")
+//                    print("RESPONDED!")
                 })
                 
             })

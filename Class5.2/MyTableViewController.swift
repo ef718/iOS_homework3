@@ -12,12 +12,14 @@ class MyTableViewController: UITableViewController {
 
     
     var movieNames = [String]()
+    var moviePosters = [String]()
+    var movieImages = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(movieNames)
-       
+        print(moviePosters)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +39,9 @@ class MyTableViewController: UITableViewController {
         return movieNames.count
     }
 
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 150
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
@@ -44,6 +49,7 @@ class MyTableViewController: UITableViewController {
         // Configure the cell...
 
         cell.textLabel?.text = movieNames[indexPath.row]
+        cell.imageView?.image = movieImages[indexPath.row]
         
         return cell
     }
